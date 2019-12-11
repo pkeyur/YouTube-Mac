@@ -81,8 +81,8 @@ function createWindow() {
     }
   })
 
-  // And load saavn.com
-  mainWindow.loadURL(`https://www.saavn.com/`)
+  // And load youtube.com
+  mainWindow.loadURL(`https://www.youtube.com/`)
 
   // Open DevTools
   // mainWindow.webContents.openDevTools()
@@ -95,8 +95,8 @@ function createWindow() {
 
     let host = url.replace(/^https?:\/\//ig, '');
 
-    // Opening saavn urls
-    if (host.includes('saavn.com'))
+    // Opening youtube urls
+    if (host.includes('youtube.com'))
       mainWindow.loadURL(url);
     else
       // Open External URLs in the default web browser

@@ -1,30 +1,29 @@
 {
-  "name": "Saavn",
+  "name": "YouTube",
   "version": "0.0.3",
-  "description": "Saavn Mac App",
+  "description": "YouTube Mac App",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "clean": "rm -rf build/*",
-    "pack": "electron-packager ./ --platform=darwin --arch=x64 --out=build --overwrite --icon=logo.icns",
-    "compress": "cd build/Saavn-darwin-x64/; 7z a Saavn.zip Saavn.app",
-    "install:app": "npm run clean; npm run pack; cp -r build/Saavn-darwin-x64/Saavn.app /Applications/Saavn.app"
+    "pack": "electron-packager ./ --platform=darwin --arch=x64 --out=build --overwrite",
+    "compress": "cd build/YouTube-darwin-x64/; 7z a YouTube.zip YouTube.app",
+    "install:app": "npm run clean; npm run pack; cp -r build/YouTube-darwin-x64/YouTube.app /Applications/YouTube.app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scriptspry/saavn-mac.git"
+    "url": "git+https://github.com/pkeyur/YouTube-Mac.git"
   },
   "keywords": [
-    "Saavn",
+    "Youtube",
     "Mac",
     "App"
   ],
   "author": "ScriptSpry",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scriptspry/saavn-mac/issues"
+    "url": "https://github.com/pkeyur/YouTube-Mac/issues"
   },
-  "homepage": "http://scriptspry.com/2016/07/30/saavn-mac-app.html",
   "devDependencies": {
     "electron": "^4.1.4",
     "electron-packager": "^13.1.1",
